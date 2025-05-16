@@ -3,7 +3,7 @@ const { connection } = require('../database/connection');
 async function getProducts() {
 
     return new Promise((resolve, reject) => {
-        connection.query("SELECT * FROM tienda.producto;" ,(err, rows) => {
+        connection.query("SELECT * FROM producto;" ,(err, rows) => {
             if (err) {
                 reject(err);
             } else {
